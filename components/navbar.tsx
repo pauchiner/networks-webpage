@@ -20,18 +20,18 @@ const LinkItem = ({ href, path, children }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue("#202023", "#FFFBFF")
   return (
-      <Link
-        as={NextLink}
-        href={href}
-        padding={2}
-        paddingLeft={active ? 3 : 2}
-        paddingRight={active ? 3 : 2}
-        rounded={13}
-        background={active ? 'glassTeal' : undefined}
-        color={active ? "#FFFBFF" : inactiveColor }
-        style={{textDecoration: 'none'}}
-        transition="background 0.3s, color 0.3s, padding 0.3s"
-      >{children}</Link>
+    <Link
+      as={NextLink}
+      href={href}
+      padding={2}
+      paddingLeft={active ? 3 : 2}
+      paddingRight={active ? 3 : 2}
+      rounded={13}
+      background={active ? 'glassTeal' : undefined}
+      color={active ? "#FFFBFF" : inactiveColor}
+      style={{ textDecoration: 'none' }}
+      transition="background 0.3s, color 0.3s, padding 0.3s"
+    >{children}</Link>
   )
 }
 
@@ -59,14 +59,14 @@ const Navbar = (props: any) => {
           <Heading as="h1" size="lg" letterSpacing={"tighter"}>
             Networks Page
           </Heading>
-        </Flex> 
+        </Flex>
         <Stack
-          direction={{base: 'column', md: 'row'}}
-          display={{base: 'none', md: 'flex'}}
-          width={{base: 'full', md: 'auto'}}
+          direction={{ base: 'column', md: 'row' }}
+          display={{ base: 'none', md: 'flex' }}
+          width={{ base: 'full', md: 'auto' }}
           alignItems="center"
           flexGrow={1}
-          marginTop={{base: 4, nmd: 0}}
+          marginTop={{ base: 4, nmd: 0 }}
         >
           <LinkItem href="/" path={path}>
             Inicio
@@ -81,16 +81,16 @@ const Navbar = (props: any) => {
             Tema 3
           </LinkItem>
         </Stack>
-        <Box  alignItems="flex-end">
-          <ThemeToggleButton/>
-          <Box marginLeft={2} display={{base: 'inline-block', md: 'none'}}>
+        <Box alignItems="flex-end">
+          <ThemeToggleButton />
+          <Box marginLeft={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
-              <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant="outline" aria-label='Options' />
+              <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label='Options' />
               <MenuList>
-                  <MenuItem as={NextLink} href="/theme3" passHref>Inicio</MenuItem>
-                  <MenuItem as={NextLink} href="/theme3" passHref>Tema 1</MenuItem>
-                  <MenuItem as={NextLink} href="/theme3" passHref>Tema 2</MenuItem>
-                  <MenuItem as={NextLink} href="/theme3" passHref>Tema 3</MenuItem>
+                <MenuItem as={NextLink} href="/" passHref>Inicio</MenuItem>
+                <MenuItem as={NextLink} href="/theme1" passHref>Tema 1</MenuItem>
+                <MenuItem as={NextLink} href="/theme2" passHref>Tema 2</MenuItem>
+                <MenuItem as={NextLink} href="/theme3" passHref>Tema 3</MenuItem>
               </MenuList>
             </Menu>
           </Box>
