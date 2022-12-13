@@ -7,7 +7,7 @@ const Page = () => {
     <Layout title="Inicio">
       <Container>
         <Box marginTop={10} textAlign="center">
-          <Text fontSize="lg" >Welcome to my webpage</Text>
+          <Text fontSize="lg">Welcome to my webpage</Text>
         </Box>
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
@@ -17,7 +17,7 @@ const Page = () => {
         </Section>
       </Container>
     </Layout>
-  )
-}
+  );
+};
 
 export default Page;
