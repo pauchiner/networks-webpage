@@ -7,7 +7,7 @@ const Main = ({ children, router }) => {
     <Box as="main" paddingBottom={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Pau García Chiner - Inicio</title>
+        <title>Pau García Chiner</title>
       </Head>
       <Navbar path={router.asPath} />
       <Container maxW="container.md" paddingTop={14}>
