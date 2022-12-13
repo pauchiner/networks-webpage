@@ -15,40 +15,40 @@ const Theme1 = () => {
               <ThemeGridItem
                 themeId={1}
                 id="example"
-                title="Example"
+                title="Ejemplo"
                 thumbnail={thumbExample}
               >
-                This is an example item.
+                Esto es una entrada de ejemplo.
               </ThemeGridItem>
             </Section>
             <Section delay={0.2}>
               <ThemeGridItem
                 themeId={1}
                 id="example"
-                title="Example"
+                title="Ejemplo"
                 thumbnail={thumbExample}
               >
-                This is an example item.
+                Esto es una entrada de ejemplo.
               </ThemeGridItem>
             </Section>
             <Section delay={0.3}>
               <ThemeGridItem
                 themeId={1}
                 id="example"
-                title="Example"
+                title="Ejemplo"
                 thumbnail={thumbExample}
               >
-                This is an example item.
+                Esto es una entrada de ejemplo.
               </ThemeGridItem>
             </Section>
             <Section delay={0.4}>
               <ThemeGridItem
                 themeId={1}
                 id="example"
-                title="Example"
+                title="Ejemplo"
                 thumbnail={thumbExample}
               >
-                This is an example item.
+                Esto es una entrada de ejemplo.
               </ThemeGridItem>
             </Section>
           </SimpleGrid>

@@ -4,11 +4,11 @@ import P from "../../components/paragraph";
 import Layout from "../../components/layouts/article";
 
 const Entry = () => (
-  <Layout title="Example">
+  <Layout title="Ejemplo">
     <Container>
-      <EntryImage src="/images/example.jpg" alt="example" />
+      <EntryImage src="/images/example.jpg" alt="ejemplo" />
       <Title themeId={1}>
-        Example <Badge colorScheme="green">new</Badge>
+        Ejemplo <Badge colorScheme="pink">prueba</Badge>
       </Title>
       <P>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -43,36 +43,7 @@ const Entry = () => (
         mattis. Varius quam quisque id diam. Ullamcorper sit amet risus nullam
         eget felis eget. Tempus egestas sed sed risus pretium quam. Diam
         volutpat commodo sed egestas egestas fringilla phasellus faucibus
-        scelerisque. Amet luctus venenatis lectus magna. Nisi est sit amet
-        facilisis. Vestibulum sed arcu non odio euismod lacinia. Aliquet
-        sagittis id consectetur purus ut faucibus pulvinar elementum. In
-        fermentum et sollicitudin ac orci phasellus. Neque sodales ut etiam sit
-        amet nisl purus in mollis. Consequat mauris nunc congue nisi vitae
-        suscipit. Sit amet luctus venenatis lectus magna fringilla. Lacus vel
-        facilisis volutpat est velit egestas. Vulputate ut pharetra sit amet
-        aliquam. Viverra suspendisse potenti nullam ac tortor vitae purus. Massa
-        ultricies mi quis hendrerit. Iaculis eu non diam phasellus vestibulum
-        lorem. Bibendum enim facilisis gravida neque. Mi in nulla posuere
-        sollicitudin aliquam ultrices sagittis orci. Elit duis tristique
-        sollicitudin nibh. Tellus in metus vulputate eu scelerisque. In ornare
-        quam viverra orci sagittis eu volutpat. Dolor sit amet consectetur
-        adipiscing elit pellentesque. Vitae semper quis lectus nulla at. Ut
-        placerat orci nulla pellentesque dignissim enim sit. Amet aliquam id
-        diam maecenas ultricies. Pretium nibh ipsum consequat nisl vel pretium
-        lectus quam. Egestas integer eget aliquet nibh praesent tristique magna
-        sit amet. Diam sollicitudin tempor id eu nisl nunc mi ipsum. Ultrices
-        sagittis orci a scelerisque. Sodales neque sodales ut etiam sit.
-        Interdum varius sit amet mattis vulputate. Nec sagittis aliquam
-        malesuada bibendum arcu vitae elementum. Nibh praesent tristique magna
-        sit amet purus gravida quis blandit. Dictum at tempor commodo
-        ullamcorper a lacus vestibulum sed arcu. At imperdiet dui accumsan sit
-        amet nulla facilisi morbi tempus. Nulla pellentesque dignissim enim sit
-        amet venenatis. Est placerat in egestas erat imperdiet sed euismod. Est
-        pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Nullam
-        eget felis eget nunc lobortis mattis aliquam. Arcu non sodales neque
-        sodales ut. Faucibus scelerisque eleifend donec pretium vulputate
-        sapien. Gravida neque convallis a cras semper auctor neque. Tristique
-        senectus et netus et malesuada.
+        scelerisque. Amet luctus venenatis lect
       </P>
     </Container>
   </Layout>

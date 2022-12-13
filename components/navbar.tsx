@@ -27,7 +27,9 @@ const LinkItem = ({ href, path, children }) => {
       paddingLeft={active ? 3 : 2}
       paddingRight={active ? 3 : 2}
       rounded={13}
-      background={active ? "glassTeal" : undefined}
+      background={
+        active ? useColorModeValue("deepBlue", "cutePurple") : undefined
+      }
       color={active ? "#FFFBFF" : inactiveColor}
       style={{ textDecoration: "none" }}
       transition="background 0.3s, color 0.3s, padding 0.3s"
@@ -57,9 +59,9 @@ const Navbar = (props: any) => {
         alignItems="center"
         justifyContent="space-between"
       >
-        <Flex alignItems="center" marginRight={5}>
-          <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-            Networks Page
+        <Flex alignItems="center" ml={1} mr={5}>
+          <Heading as="h1" size="lg" letterSpacing={"tight"}>
+            Pau García Chiner
           </Heading>
         </Flex>
         <Stack
