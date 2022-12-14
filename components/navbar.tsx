@@ -93,7 +93,7 @@ const Navbar = (props: any) => {
           </LinkItem>
           <LinkItem
             target="_blank"
-            href="https:/github.com/pauchiner/networks-webpage/"
+            href="https://github.com/pauchiner/networks-webpage"
             path={path}
           >
             <Box
