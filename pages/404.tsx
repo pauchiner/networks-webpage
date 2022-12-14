@@ -32,7 +32,7 @@ const NotFound = () => {
         </Container>
         <Heading as="h1">Página no encontrada</Heading>
         <Text mt={3}>
-          Lo sentimos, nuestra sitio web no contiene esta página.
+          Lo sentimos, nuestro sitio web no contiene esta página.
         </Text>
         <Divider my={6} />
         <Box my={6} alignItems="center">
