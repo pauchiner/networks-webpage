@@ -2,6 +2,7 @@ import NextLink from "next/link";
 import {
   Container,
   Box,
+  Text,
   Link,
   Stack,
   Heading,
@@ -15,14 +16,16 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
+import GithubIcon from "./icons/github";
 
-const LinkItem = ({ href, path, children }) => {
+const LinkItem = ({ href, path, target, children }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue("#202023", "#FFFBFF");
   return (
     <Link
       as={NextLink}
       href={href}
+      target={target !== "" ? target : null}
       padding={2}
       paddingLeft={active ? 3 : 2}
       paddingRight={active ? 3 : 2}
@@ -37,6 +40,10 @@ const LinkItem = ({ href, path, children }) => {
       {children}
     </Link>
   );
+};
+
+LinkItem.defaultProps = {
+  target: "",
 };
 
 const Navbar = (props: any) => {
@@ -84,6 +91,21 @@ const Navbar = (props: any) => {
           <LinkItem href="/theme3" path={path}>
             Tema 3
           </LinkItem>
+          <LinkItem
+            target="_blank"
+            href="https://github.com/pauchiner/networks-webpage"
+            path={path}
+          >
+            <Box
+              alignItems="center"
+              justifyContent="center"
+              display="flex"
+              flexDirection="row"
+            >
+              <GithubIcon fill={useColorModeValue("#000", "#fff")} />
+              <Text paddingLeft={2}>Ver Código</Text>
+            </Box>
+          </LinkItem>
         </Stack>
         <Box alignItems="flex-end">
           <ThemeToggleButton />
@@ -107,6 +129,14 @@ const Navbar = (props: any) => {
                 </MenuItem>
                 <MenuItem as={NextLink} href="/theme3" passHref>
                   Tema 3
+                </MenuItem>
+                <MenuItem
+                  as={NextLink}
+                  target="_blank"
+                  href="https://github.com/pauchiner/networks-webpage"
+                  passHref
+                >
+                  Ver Código
                 </MenuItem>
               </MenuList>
             </Menu>
